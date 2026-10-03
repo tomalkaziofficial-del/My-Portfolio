@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kazi Tomal Islam | Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header class="top-header">
+        <div class="logo" onclick="navigateTo('view-home')" style="cursor:pointer;">Tomal<span>.</span></div>
+        <div class="top-actions">
+            <a href="https://github.com/TomalKazi" target="_blank" class="btn-top"><i class="fa-brands fa-github"></i>
+                Follow Me</a>
+            <a href="#" onclick="navigateTo('view-contact')" class="btn-top highlight-btn"><i
+                    class="fa-solid fa-paper-plane"></i> Contact</a>
+        </div>
+    </header>
+
+    <!-- Main Container for App Views -->
+    <main class="container">
+
+        <!-- ================= HOME VIEW ================= -->
+        <div id="view-home" class="page-view active">
+            <section class="profile-section">
+                <div class="profile-card">
+                    <div class="profile-image-container">
+                        <img src="My Pic.png" alt="Kazi Tomal Islam" class="profile-img">
+                    </div>
+                    <h1 class="name">Kazi Tomal Islam</h1>
+                    <p class="tagline">I am a <span class="typing-text"></span></p>
+                </div>
+            </section>
+
+            <section class="content-section">
+                <h2 class="section-title">About Me</h2>
+                <div class="card about-card">
+                    <p>I am a Computer Science and Engineering graduate with a strong passion for data-driven
+                        technologies and software development. I enjoy analyzing complex datasets, building impactful
+                        machine learning models, and continuously learning new technologies to stay ahead in the tech
+                        industry.</p>
+                </div>
+            </section>
+
+            <section class="content-section">
+                <h2 class="section-title">Projects Preview</h2>
+                <!-- Project 1 -->
+                <div class="project-card">
+                    <div class="project-info">
+                        <h3>Malnutrition Prediction</h3>
+                        <p>Predicting under-five childhood malnutrition in Bangladesh using ensemble machine learning.
+                        </p>
+                        <span class="status"><i class="fa-solid fa-check-circle"></i> Completed</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="https://github.com/tomalkaziofficial-del/Malnutrition-Prediction" target="_blank"
+                            class="project-btn">Web Link ➔</a>
+                    </div>
+                </div>
+
+                <div class="explore-buttons">
+                    <button onclick="navigateTo('view-projects')" class="explore-btn">Explore All Projects ➔</button>
+                    <button onclick="navigateTo('view-pages')" class="explore-btn">Explore All Pages ➔</button>
+                </div>
+            </section>
+        </div>
+
+        <!-- ================= SKILLS VIEW ================= -->
+        <div id="view-skills" class="page-view">
+            <h2 class="section-title" style="margin-top: 40px;">My Skills</h2>
+            <div class="skills-container">
+                <div class="skill-box">
+                    <span class="skill-name">Python & ML</span>
+                    <div class="progress-bg">
+                        <div class="progress-fill" style="width: 90%;"></div>
+                    </div>
+                </div>
+                <div class="skill-box">
+                    <span class="skill-name">Next.js & Web Dev</span>
+                    <div class="progress-bg">
+                        <div class="progress-fill" style="width: 75%;"></div>
+                    </div>
+                </div>
+                <div class="skill-box">
+                    <span class="skill-name">Cyber Security</span>
+                    <div class="progress-bg">
+                        <div class="progress-fill" style="width: 70%;"></div>
+                    </div>
+                </div>
+                <div class="skill-box">
+                    <span class="skill-name">C & C++</span>
+                    <div class="progress-bg">
+                        <div class="progress-fill" style="width: 65%;"></div>
+                    </div>
+                </div>
+                <div class="skill-box">
+                    <span class="skill-name">Kali Linux</span>
+                    <div class="progress-bg">
+                        <div class="progress-fill" style="width: 60%;"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- ================= HOBBIES VIEW ================= -->
+        <div id="view-hobbies" class="page-view">
+            <h2 class="section-title" style="margin-top: 40px;">My Hobbies</h2>
+
+            <div class="hobby-card">
+                <h3>♟️ Playing Chess</h3>
+                <p>I enjoy playing chess and sharpening my strategic thinking. It helps me stay sharp and think
+                    critically while having fun.</p>
+                <a href="#" class="hobby-btn">Play Chess with Me</a>
+            </div>
+
+            <div class="hobby-card">
+                <h3>💻 Coding Projects</h3>
+                <p>Passionate about building intuitive web apps and helpful Telegram bots to solve real-world problems.
+                    I love blending this development passion with my expertise in AI and Machine Learning to create
+                    smart, data-driven solutions.</p>
+                <a href="https://github.com/TomalKazi" target="_blank" class="hobby-btn">View My GitHub</a>
+            </div>
+
+            <div class="hobby-card">
+                <h3>📚 Learning New Tech</h3>
+                <p>Exploring new programming languages and staying updated with the latest tech trends is something I
+                    regularly enjoy.</p>
+            </div>
+        </div>
+
+        <!-- ================= ALL PROJECTS VIEW ================= -->
+        <div id="view-projects" class="page-view">
+            <h2 class="section-title" style="margin-top: 40px;">All Projects & Certifications</h2>
+
+            <div class="project-card">
+                <div class="project-info">
+                    <h3>Malnutrition Prediction</h3>
+                    <p>Predicting under-five childhood malnutrition using ensemble ML.</p>
+                    <span class="status"><i class="fa-solid fa-check-circle"></i> Completed</span>
+                </div>
+                <div class="project-links">
+                    <a href="https://github.com/tomalkaziofficial-del/Malnutrition-Prediction" target="_blank"
+                        class="project-btn">Web Link ➔</a>
+                </div>
+            </div>
+
+            <div class="project-card">
+                <div class="project-info">
+                    <h3>Tawfik-Mart (E-commerce)</h3>
+                    <p>A modern full-stack e-commerce web application built with Next.js.</p>
+                    <span class="status"><i class="fa-solid fa-check-circle"></i> Completed</span>
+                </div>
+                <div class="project-links">
+                    <a href="https://tawfik-mart.vercel.app/" target="_blank" class="project-btn">Web Link ➔</a>
+                </div>
+            </div>
+
+            <div class="project-card">
+                <div class="project-info">
+                    <h3>Trendify BD</h3>
+                    <p>E-commerce promotion and lifestyle gadget marketing via TikTok.</p>
+                    <span class="status"><i class="fa-solid fa-check-circle"></i> Completed</span>
+                </div>
+                <div class="project-links">
+                    <a href="#" class="project-btn">Profile ➔</a>
+                </div>
+            </div>
+
+            <div class="project-card">
+                <div class="project-info">
+                    <h3>21st Century Employability Skilling</h3>
+                    <p>Completed 77 hours of training at the Basic Level from Wadhwani Foundation & EDGE.</p>
+                    <span class="status"><i class="fa-solid fa-certificate"></i> Certified</span>
+                </div>
+                <div class="project-links">
+                    <a href="Wadhwani Foundation Certificate .png" target="_blank" class="project-btn">View ➔</a>
+                </div>
+            </div>
+            <div class="project-card">
+                <div class="project-info">
+                    <h3>Cyber Security Certification (EDGE)</h3>
+                    <p>Successfully completed Cyber Security training under the EDGE project by BCC, ICT Division.
+                        Managed by IIT, University of Dhaka (May 22 - Aug 31, 2023).</p>
+                    <span class="status"><i class="fa-solid fa-certificate"></i> Certified</span>
+                </div>
+                <div class="project-links">
+                    <a href="Certificate.png" target="_blank" class="project-btn">View ➔</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- ================= EXPLORE PAGES MENU VIEW ================= -->
+        <div id="view-pages" class="page-view">
+            <h2 class="section-title" style="margin-top: 40px;">Explore All Pages</h2>
+            <div class="pages-grid">
+                <div class="page-link-card" onclick="navigateTo('view-home')">
+                    <div class="page-icon"><i class="fa-solid fa-house" style="color: #facc15;"></i> Home</div>
+                    <div class="page-visit">Visit ➔</div>
+                </div>
+                <div class="page-link-card" onclick="navigateTo('view-skills')">
+                    <div class="page-icon"><i class="fa-solid fa-code" style="color: #facc15;"></i> Skills</div>
+                    <div class="page-visit">Visit ➔</div>
+                </div>
+                <div class="page-link-card" onclick="navigateTo('view-hobbies')">
+                    <div class="page-icon"><i class="fa-solid fa-heart" style="color: #facc15;"></i> Hobbies</div>
+                    <div class="page-visit">Visit ➔</div>
+                </div>
+                <div class="page-link-card" onclick="navigateTo('view-projects')">
+                    <div class="page-icon"><i class="fa-solid fa-lightbulb" style="color: #facc15;"></i> Projects</div>
+                    <div class="page-visit">Visit ➔</div>
+                </div>
+                <div class="page-link-card" onclick="navigateTo('view-contact')">
+                    <div class="page-icon"><i class="fa-solid fa-envelope" style="color: #facc15;"></i> Contact</div>
+                    <div class="page-visit">Visit ➔</div>
+                </div>
+            </div>
+        </div>
+
+        <!-- ================= CONTACT VIEW ================= -->
+        <div id="view-contact" class="page-view">
+            <h2 class="section-title" style="margin-top: 40px;">Get in Touch</h2>
+            <div class="contact-grid">
+                <a href="mailto:tomal.kazi.official@gmail.com" class="contact-card">
+                    <div class="contact-icon"><i class="fa-solid fa-envelope"></i> Email</div>
+                    <div class="contact-action">Message ➔</div>
+                </a>
+                <a href="https://wa.me/8801700609179" target="_blank" class="contact-card">
+                    <div class="contact-icon"><i class="fa-brands fa-whatsapp"></i> WhatsApp</div>
+                    <div class="contact-action">Message ➔</div>
+                </a>
+                <a href="https://t.me/+8801700609179" target="_blank" class="contact-card">
+                    <div class="contact-icon"><i class="fa-brands fa-telegram"></i> Telegram</div>
+                    <div class="contact-action">Message ➔</div>
+                </a>
+            </div>
+        </div>
+
+    </main>
+
+    <!-- Bottom Navigation Bar -->
+    <nav class="bottom-nav">
+        <a href="#" id="nav-home" class="nav-item active" onclick="navigateTo('view-home')">
+            <i class="fa-solid fa-house"></i>
+            <span>Home</span>
+        </a>
+        <a href="#" id="nav-projects" class="nav-item" onclick="navigateTo('view-projects')">
+            <i class="fa-solid fa-laptop-code"></i>
+            <span>Projects</span>
+        </a>
+        <a href="#" id="nav-pages" class="nav-item" onclick="navigateTo('view-pages')">
+            <i class="fa-solid fa-compass"></i>
+            <span>Pages</span>
+        </a>
+        <a href="#" id="nav-contact" class="nav-item" onclick="navigateTo('view-contact')">
+            <i class="fa-solid fa-envelope"></i>
+            <span>Contact</span>
+        </a>
+    </nav>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
